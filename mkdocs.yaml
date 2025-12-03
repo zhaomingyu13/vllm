@@ -1,3 +1,27 @@
+site_name: vLLM
+site_url: !ENV READTHEDOCS_CANONICAL_URL
+repo_url: https://github.com/vllm-project/vllm
+edit_uri: edit/main/docs/
+exclude_docs: |
+  argparse
+  *.inc.md
+  *.template.md
+
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+  custom_dir: docs/mkdocs/overrides
 
   - docs/mkdocs/hooks/generate_argparse.py
   - docs/mkdocs/hooks/url_schemes.py
